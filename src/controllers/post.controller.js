@@ -39,6 +39,7 @@ export const createNewPost = (req, res) => {
   res.status(201).json(created);
 };
 
+
 export const updateExistingPost = (req, res) => {
   const id = parseInt(req.params.id, 10);
   const { title, content } = req.body;
